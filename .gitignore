@@ -19,3 +19,5 @@ Thumbs.db
 
 # 프로젝트 결과물 (자동 생성된 CSV를 제외하고 싶을 때)
 *.csv
+!input_template.csv
+!output_template.csv
