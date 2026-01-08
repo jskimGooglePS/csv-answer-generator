@@ -1,0 +1,21 @@
+# Python 관련
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# 가상환경 (uv 사용 시 필수)
+.venv/
+venv/
+env/
+
+# 환경 변수 및 비밀번호 (API 키 보호)
+.env
+*.key
+
+# OS 관련
+.DS_Store
+Thumbs.db
+
+# 프로젝트 결과물 (자동 생성된 CSV를 제외하고 싶을 때)
+*.csv
