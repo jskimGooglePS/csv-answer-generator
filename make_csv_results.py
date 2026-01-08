@@ -6,9 +6,12 @@ from google.genai import types
 
 import asyncio
 
+input_file = "Planning_테스트 자동화_text.csv"
+output_file = "result_csv.csv"
+
 #모델 및 데이터 선택
 model = "gemini-2.5-flash"
-df = pd.read_csv("./data/input/Planning_테스트 자동화_text.csv")
+df = pd.read_csv(f"./data/input/{input_file}")
 
 client = Client(
     vertexai=True,
@@ -69,7 +72,7 @@ async def process_all():
 
     df['결과'] = results
 
-    df.to_csv("./data/output/result_csv.csv", index=False)
+    df.to_csv(f"./data/output/{output_file}", index=False)
 
     print("CSV 생성 완료!")
 
